@@ -1,7 +1,7 @@
 '''
 Author: gsl
 Date: 2024-01-04 15:28:54
-LastEditTime: 2024-01-11 20:44:36
+LastEditTime: 2024-01-11 11:08:11
 FilePath: /workspace/model_service/app/ppc_predict/data_load.py
 Description: 
 
@@ -72,6 +72,6 @@ def load_dataframe(data_df):
     dfs['Longest_stirke_above_mean_value_of_MP'] *= 2
     dfs['Longest_stirke_above_mean_value_of_CRS'] *= 2
     dfs['Longest_stirke_below_mean_value_of_CRS'] *= 2
-    dfs['Longest_stirke_below_mean_value_of_MP'] *= 2A
+    dfs['Longest_stirke_below_mean_value_of_MP'] *= 2
  
-      return dfs[columns_order].values
+    return dfs[columns_order].values

@@ -1,7 +1,7 @@
 '''
 Author: gsl
 Date: 2024-01-04 15:14:54
-LastEditTime: 2024-01-11 10:02:05
+LastEditTime: 2024-01-12 18:10:16
 FilePath: /workspace/model_service/app/ppc_predict/predict.py
 Description: 
 
@@ -23,10 +23,10 @@ def predict():
     X = data_load.load_data(parameters)
     # load model 
     y_pred_prob_list = []
-    threshold = 0.1
+    
     for i in range(1,6):
         with open(f'../model_service/ppcs_predict_model/XGBClassifier_{i}.pickle','rb') as f:
             clf_load = pkl.load(f)  
-            y_pred_prob_list.append(clf_load.predict_proba(X)[:,1]+threshold) 
+            y_pred_prob_list.append(clf_load.predict_proba(X)[:,1]) 
       
     return jsonify({'prediction': str(round(np.mean(y_pred_prob_list),3))})
