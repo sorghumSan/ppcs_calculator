@@ -1,7 +1,7 @@
 '''
 Author: gsl
 Date: 2024-01-04 15:06:28
-LastEditTime: 2024-01-09 15:59:36
+LastEditTime: 2024-01-14 11:57:43
 FilePath: /workspace/model_service/app/factory.py
 Description: 
 

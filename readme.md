@@ -1,3 +1,5 @@
+python = 3.9.7
+
 ## model_example.ipynb :
 
 Given the test data, the model infers the probability of the resulting outcome.
@@ -8,6 +10,8 @@ deployed model by sending an HTTP request to the Flask application's URL. (eg. 1
 
 > PORT: 5000 -> model_service/app/config.py
 
-run:
-cd app
-python run app.py
+**run:**
+
+> cd app
+>
+> python run app.py
